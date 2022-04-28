@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:       weka.associations.FilteredAssociator -F "weka.filters.MultiFilter -F \"weka.filters.unsupervised.attribute.ReplaceMissingValues \" -S 1" -c -1 -W weka.associations.Apriori -- -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     titanic_Orange
+Instances:    716
+Attributes:   6
+              Pclass
+              Sex=male
+              Age
+              Embarked=Q
+              Embarked=S
+              Survived
+=== Associator model (full training set) ===
+
+FilteredAssociator using weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1 on data filtered through weka.filters.MultiFilter -F "weka.filters.unsupervised.attribute.ReplaceMissingValues " -S 1
+
+Filtered Header
+@relation titanic_Orange-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.MultiFilter-Fweka.filters.unsupervised.attribute.ReplaceMissingValues-S1
+
+@attribute Pclass {'<\\ 1.5 1.5\\ -\\ 2.5 â‰¥\\ 2.5','â‰¥ 2.5','< 1.5','1.5 - 2.5'}
+@attribute Sex=male {'<\\ 0.5 â‰¥\\ 0.5','â‰¥ 0.5','< 0.5'}
+@attribute Age {'<\\ 22.5 22.5\\ -\\ 34.25 â‰¥\\ 34.25','< 22.5','â‰¥ 34.25','22.5 - 34.25'}
+@attribute Embarked=Q {'<\\ 0.5 â‰¥\\ 0.5','< 0.5','â‰¥ 0.5'}
+@attribute Embarked=S {'<\\ 0.5 â‰¥\\ 0.5','â‰¥ 0.5','< 0.5'}
+@attribute Survived {'0 1',class,0,1}
+
+@data
+
+
+Associator Model
+
+Apriori
+=======
+
+Minimum support: 0.35 (251 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 13
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 7
+
+Size of set of large itemsets L(2): 11
+
+Size of set of large itemsets L(3): 6
+
+Size of set of large itemsets L(4): 1
+
+Best rules found:
+
+ 1. Embarked=S=â‰¥ 0.5 555 ==> Embarked=Q=< 0.5 555    <conf:(1)> lift:(1.04) lev:(0.03) [22] conv:(22.48)
+ 2. Sex=male=â‰¥ 0.5 Embarked=S=â‰¥ 0.5 369 ==> Embarked=Q=< 0.5 369    <conf:(1)> lift:(1.04) lev:(0.02) [14] conv:(14.95)
+ 3. Embarked=S=â‰¥ 0.5 Survived=0 353 ==> Embarked=Q=< 0.5 353    <conf:(1)> lift:(1.04) lev:(0.02) [14] conv:(14.3)
+ 4. Sex=male=â‰¥ 0.5 Embarked=S=â‰¥ 0.5 Survived=0 300 ==> Embarked=Q=< 0.5 300    <conf:(1)> lift:(1.04) lev:(0.02) [12] conv:(12.15)
+ 5. Pclass=â‰¥ 2.5 Embarked=S=â‰¥ 0.5 291 ==> Embarked=Q=< 0.5 291    <conf:(1)> lift:(1.04) lev:(0.02) [11] conv:(11.79)
+ 6. Survived=1 290 ==> Embarked=Q=< 0.5 282    <conf:(0.97)> lift:(1.01) lev:(0.01) [3] conv:(1.31)
+ 7. Sex=male=â‰¥ 0.5 454 ==> Embarked=Q=< 0.5 438    <conf:(0.96)> lift:(1.01) lev:(0) [2] conv:(1.08)
+ 8. Sex=male=â‰¥ 0.5 Survived=0 360 ==> Embarked=Q=< 0.5 345    <conf:(0.96)> lift:(1) lev:(-0) [0] conv:(0.91)
+ 9. Survived=0 424 ==> Embarked=Q=< 0.5 404    <conf:(0.95)> lift:(0.99) lev:(-0) [-2] conv:(0.82)
+10. Pclass=â‰¥ 2.5 Survived=0 270 ==> Embarked=Q=< 0.5 252    <conf:(0.93)> lift:(0.97) lev:(-0.01) [-7] conv:(0.58)

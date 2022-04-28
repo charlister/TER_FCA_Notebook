@@ -5,7 +5,9 @@
 	<groupId>com.example.TER</groupId>
 	<artifactId>com.example.TER</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>TER_essais</name>
+	<name>TER_FCA</name>
+	<description>Project using FCA4J
+	</description>
 	<dependencies>
 		<dependency>
 			<groupId>nz.ac.waikato.cms.weka</groupId>
