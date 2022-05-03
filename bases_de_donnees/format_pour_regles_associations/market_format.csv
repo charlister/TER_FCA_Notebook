@@ -1,0 +1,6 @@
+,P1,P2,P3,P4,,
+T1,bread,milk,,,,
+T2,bread,,tea,coffee,eggs,
+T3,,milk,tea,coffee,,coke
+T4,bread,milk,tea,coffee,,
+T5,bread,milk,tea,,,coke

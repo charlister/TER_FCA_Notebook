@@ -1,0 +1,11 @@
+,C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11
+T1 ,flies,,,,,elytra,,,si1-legged,,
+T2,flies,nocturnal,,,,,,,,,
+T3,,,feathered,,,,,,,,
+T4,flies,,feathered,migratory,,,sea-habitat,,,eats-fish,water-habitat
+T5,flies,,feathered,0,red-bill,,sea-habitat,,,eats-fish,water-habitat
+T6,flies,,feathered,migratory,,,sea-habitat,,,eats-fish,water-habitat
+T7,flies,,feathered,,,,sea-habitat,,,eats-fish,water-habitat
+T8,flies,,feathered,,,,,wood-habitat,,,
+T9,,,,,,,,,,eats-fish,water-habitat
+T10,flies,,feathered,migratory,red-bill,,sea-habitat,,,eats-fish,water-habitat
