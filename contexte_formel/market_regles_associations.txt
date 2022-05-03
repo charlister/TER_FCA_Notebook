@@ -1,0 +1,12 @@
+Best rules found:
+
+ 1. P4=coffee 3 ==> P3=tea 3    <conf:(1)> lift:(1.25) lev:(0.12) [0] conv:(0.6)
+ 2. P6=coke 2 ==> P2=milk 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 3. P6=coke 2 ==> P3=tea 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 4. P1=bread P4=coffee 2 ==> P3=tea 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 5. P2=milk P4=coffee 2 ==> P3=tea 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 6. P3=tea P6=coke 2 ==> P2=milk 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 7. P2=milk P6=coke 2 ==> P3=tea 2    <conf:(1)> lift:(1.25) lev:(0.08) [0] conv:(0.4)
+ 8. P6=coke 2 ==> P2=milk P3=tea 2    <conf:(1)> lift:(1.67) lev:(0.16) [0] conv:(0.8)
+ 9. P5=eggs 1 ==> P1=bread 1    <conf:(1)> lift:(1.25) lev:(0.04) [0] conv:(0.2)
+10. P5=eggs 1 ==> P3=tea 1    <conf:(1)> lift:(1.25) lev:(0.04) [0] conv:(0.2)
